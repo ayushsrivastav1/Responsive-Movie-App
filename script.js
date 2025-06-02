@@ -37,8 +37,3 @@ searchForm.addEventListener("submit", (e) => {
         document.querySelector('.movie').innerHTML = "<h1>Enter movie name to get movie details</h1>"
     }
 }) 
-
-const fn = ()=>{
-    console.log("hi");
-    
-}
