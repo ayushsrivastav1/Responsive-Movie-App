@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', serif;
+}
+
+body{
+    background-color: #151b23;
+}
+
+nav {
+    background-color: #232f3e;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px;
+}
+
+.search-container input,
+button {
+    padding: 5px 7px;
+    border: none;
+    outline: none;
+}
+
+.search-container input {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.search-container button {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #F5cF18;
+}
+
+.search-container button:hover {
+    background-color: #ffdd45;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-block: 38px;
+    color: #fff;
+}
+
+main section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+footer {
+    text-align: center;
+    background-color: #232f3e;
+    color: #fff;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.movieCard{
+    display: flex;
+    gap: 30px;
+    background-color: #1A1A1A;
+    color: #fff;
+    padding: 22px;
+    border-radius: 5px;
+}
+
+.movieCard h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.movieCard p{
+    margin-top: 20px;
+}
+
+.rating {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.movieCard a{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #1e2630;
+    color: #fff;
+    width: 80%;
+    padding: 8px;
+    border-radius: 7px;
+    margin: auto;
+    font-weight: 600;
+    text-decoration: none;
+}
+.movieCard span{
+    color: rgb(156, 155, 155);
+}
+
+@media screen and (max-width:1100px) {
+    .movieCard{
+        width: 90%;
+    }
+}
+@media screen and (max-width:700px) {
+    .navbar{
+        display: block;
+        text-align: center;
+    }
+    .search-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 11px;
+    }
+    .logo{
+        align-items: center;
+    }
+    .movieCard{
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .inputBox{
+        width: 50%;
+    }
+    .movieCard img{
+        width: 90%;
+    }
+}
